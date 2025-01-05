@@ -3,6 +3,7 @@ import Heading from '@/components/Backend/Heading'
 import LargeCards from '@/components/Backend/LargeCards'
 import SmallCards from '@/components/Backend/SmallCards'
 import DashboradCharts from '@/components/Backend/DashboradCharts'
+import CustomTables from '@/components/Backend/CustomTables'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <LargeCards/>
       <SmallCards/>
       <DashboradCharts/>
+      <CustomTables/>
     </div>
   )
 }

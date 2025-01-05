@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className='bg-slate-700 w-60 space-y-6 h-screen text-slate-50 p-3 fixed top-0 left-0'>
+    <div className='dark:bg-slate-700 bg-white w-60 space-y-6 h-screen dark:text-slate-50 text-slate-800 p-3 fixed top-0 left-0 shadow-md'>
       <Link className='mb-6' href="#">Logo</Link>
       <div className="space-y-3 flex flex-col">
         <Link href="#">Dashboard</Link>

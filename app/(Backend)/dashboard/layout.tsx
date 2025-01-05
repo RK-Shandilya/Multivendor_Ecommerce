@@ -8,9 +8,9 @@ const layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className='flex'>
       <Sidebar/>
-      <div className="w-full">
+      <div className="w-full ml-60">
         <Navbar/>
-        <main className='ml-60 p-8 bg-slate-900 text-slate-50 min-h-screen mt-16'>
+        <main className='p-8 bg-slate-100 dark:bg-slate-900 dark:text-slate-50 min-h-screen mt-16'>
           {children}
         </main>
       </div>
