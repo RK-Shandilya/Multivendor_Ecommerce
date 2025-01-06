@@ -12,11 +12,17 @@ import {
   } from "@/components/ui/dropdown-menu"
 import ThemeSwitcherBtn from '../ThemeSwitcherBtn'
   
+interface Props {
+    setShowSidebar: (show: boolean) => void;
+    showSidebar: boolean;
+}
 
-const Navbar = () => {
+const Navbar = ({setShowSidebar , showSidebar}: Props) => {
   return (
-    <div className="flex items-center justify-between dark:bg-slate-800 bg-white text-slate-50 h-16 py-4 fixed top-0 w-full px-8 z-50 pr-[20rem]">
-      <button className='text-lime-700 dark:text-lime-500'>
+    <div className="flex items-center justify-between dark:bg-slate-800 bg-white text-slate-50 h-16 py-4 fixed top-0 w-full px-8 z-50 sm:pr-[20rem]">
+      <button
+        onClick={()=> setShowSidebar(!showSidebar)}
+        className='text-lime-700 dark:text-lime-500'>
         <AlignJustify/>
       </button>
       <div className="flex space-x-3">
